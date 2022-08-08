@@ -22,7 +22,8 @@ public class Criteria implements Iterable<Criterion> {
 	}
 	
 	public double geometricMean(int[] numbers) {
-		int totalProduct = Arrays.stream(numbers).reduce(1, (product, number) -> product * number);
+		int totalProduct = Arrays.stream(numbers)
+							.reduce(1, (product, number) -> product * number);
 		return Math.pow(totalProduct, 1.0 / numbers.length);
 	}
 

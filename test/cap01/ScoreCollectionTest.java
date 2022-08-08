@@ -1,7 +1,7 @@
 package cap01;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class ScoreCollectionTest {
@@ -17,7 +17,8 @@ public class ScoreCollectionTest {
 		int actualResult = collection.arithmeticMean();
 		
 		//assert
-		assertThat(actualResult, equalTo(6));
+//		assertThat(actualResult, equalTo(6));
+		assertEquals(actualResult, 6);
 	}
 
 }

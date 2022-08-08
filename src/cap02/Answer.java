@@ -24,7 +24,8 @@ public class Answer {
 	
 	@Override
 	public String toString() {
-		return String.format("%s %s", question.getText(), question.getAnswerChoice(i));
+		return String.format("%s %s", question.getText()
+				, question.getAnswerChoice(i));
 	}
 	
 	public boolean match(int expected) {
